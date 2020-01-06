@@ -145,9 +145,17 @@ address {
    }
 
 .content-wrapper {
-    width: 90%;
-    margin: 50px 0;
+  width: 90%;
+  margin: 50px 0;
   }
+
+img {
+	width: 100%;
+}
+
+figure {
+  margin: 0;
+}
 
 /******* BASE HEADER - FOOTER STYLES ******/
 
@@ -166,6 +174,16 @@ header{
   padding: 15px 0;
 }
 
+header figure{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+
+
 header .content-wrapper{
   display: flex;
   justify-content: center;
@@ -173,6 +191,8 @@ header .content-wrapper{
   flex-flow: row wrap;
   margin: 0;
 }
+
+
 
 .header-divider{
   background: #3a3a3a;
@@ -260,7 +280,13 @@ footer .copyright{
 .hero-area {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-flow: row wrap;
+  min-height: 500px;
+  background-image: url('../img/hero-image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-area h1 {
@@ -306,6 +332,9 @@ input[type=button] {
 
 
 .features{
+  background: url('../img/meal-image.jpg');
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -350,6 +379,9 @@ input[type=button] {
   margin: 20px 0;
 }
 
+.reviews figure{
+  width: 73%;
+}
 
 /******* MOBILE STYLES - ABOUT ******/
 
@@ -554,6 +586,9 @@ header nav ul{
 }
 
 /****** hero area *****/
+.hero-area {
+  min-height: 600px;
+}
 
 .hero-area h1 {
   font-size: 3em;
@@ -604,6 +639,10 @@ aside .content-wrapper .form {
   .reviews h2 {
     width: 90%;
   }
+
+.reviews figure{
+  width: 44%;
+}
 
 .reviews article div{
   width: 49%;
@@ -713,6 +752,9 @@ footer .copyright{
       line-height: 1.333;
   }
 
+header figure{
+  width:23%;
+}
 
      /* Hero */
 .hero-area h1 {
@@ -747,6 +789,9 @@ aside .content-wrapper .form {
   width: 42%;
   }
 
+  .reviews figure{
+    width: 44%;
+  }
 /* ==========================================================================
    About Page
    ========================================================================== */
