@@ -209,7 +209,6 @@ header nav{
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
-  width: 60%;
 }
 
 header nav ul{
@@ -223,8 +222,8 @@ header nav ul li {
 }
 
 footer{
-  flex-direction: column;
   text-align: center;
+  flex-direction: column;
 }
 
 
@@ -345,7 +344,7 @@ input[type=button] {
 }
 
 .features article{
-  width: 51%;
+  width: 63%;
   margin: 30px 0;
 }
 
@@ -356,7 +355,13 @@ input[type=button] {
   flex-flow: row wrap;
 }
 
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
+}
+
 .features p{
+  text-align: center;
   margin: 0;
 }
 
@@ -364,6 +369,7 @@ input[type=button] {
 /* Reviews section */
 
 .reviews{
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -372,6 +378,7 @@ input[type=button] {
 
 .reviews h2{
   margin-bottom: 40px;
+  line-height: 1;
 }
 
 .reviews h3{
