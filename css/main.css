@@ -114,6 +114,8 @@ body{
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -125,6 +127,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: 500;
+  margin: 0;
 }
 
 h3,
@@ -209,6 +212,7 @@ header nav{
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  width: 60%;
 }
 
 header nav ul{
@@ -253,18 +257,13 @@ footer .content-wrapper{
   margin: 50px 0;
 }
 
-footer .footer-content{
-
+footer .social-icons p i {
+  font-size: 1.3125em;
 }
 
 footer .contact {
   margin-bottom: 50px;
   }
-
-h4{
-
-}
-
 
 footer .copyright{
   margin: 20px 0;
@@ -290,7 +289,9 @@ footer .copyright{
 }
 
 .hero-area h1 {
-  font-size: 2.25em;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 /* Aside */
@@ -373,7 +374,6 @@ input[type=button] {
   background-color: #2a423a;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
 }
 
@@ -387,10 +387,6 @@ input[type=button] {
   margin: 20px 0;
 }
 
-.reviews figure{
-  width: 73%;
-}
-
 /******* MOBILE STYLES - ABOUT ******/
 
 .mission{
@@ -401,7 +397,7 @@ input[type=button] {
   flex-flow: row wrap;
 }
 
-.map-container{
+.map figure{
   width: 100%;
   height: 0;
   padding-bottom: 125%;
@@ -584,6 +580,7 @@ h3 {
 
 header {
   justify-content: space-around;
+  padding: 33px 0;
 }
 
 header .content-wrapper {
@@ -633,14 +630,14 @@ aside .content-wrapper{
 
 aside .content-wrapper .form-description,
 aside .content-wrapper .form {
-  width: 35%;
+  width: 40%;
   margin: 0;
 }
 
 /****** features *****/
 
 .features h2{
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .features article{
@@ -655,6 +652,10 @@ aside .content-wrapper .form {
   width: 50%;
 }
 
+.features i {
+  margin-bottom: 30px;
+}
+
 /***** reviews *****/
 
 .reviews article{
@@ -663,16 +664,13 @@ aside .content-wrapper .form {
 }
 
   .reviews h2 {
-    width: 90%;
+    width: 85%;
   }
 
-.reviews figure{
-  width: 44%;
-}
-
-.reviews article div{
-  width: 49%;
-}
+  .reviews article figure,
+  .reviews article div {
+    width: 49%;
+  }
 
 .reviews h3 {
   width: 75%;
@@ -682,7 +680,7 @@ aside .content-wrapper .form {
 /***** footer *****/
 
 footer .content-wrapper{
-  width: 64%;
+  width: 65%;
   margin: 100px 0;
 }
 
@@ -706,10 +704,13 @@ footer .copyright{
   width: 100%;
 }
 
-.footer-content{
-  display: flex;
+footer p {
+    line-height: 1.285;
+}
+
+footer .social-icons {
+  width: 12.5em;
   justify-content: space-between;
-  align-items: center;
 }
 
 /************** About Page *****************/
@@ -721,11 +722,11 @@ footer .copyright{
 }
 
 .mission-content p {
-  width: 40%;
+  width: 45%;
 }
 
 .map-container {
-  padding-bottom: 45.5%;
+  padding-bottom: 45%;
 }
 
  .contact-section .content-wrapper h2 {
@@ -749,7 +750,7 @@ footer .copyright{
 }
 
 .faq-content {
-  flex-basis: 40%;
+  flex-basis: 45%;
 }
 
 .faq h2 {
@@ -763,6 +764,10 @@ footer .copyright{
 }
 
 @media only screen and (min-width: 1200px) {
+
+  header {
+    padding: 15px 0;
+  }
 
 .content-wrapper {
   max-width: 960px;
@@ -815,6 +820,11 @@ aside .content-wrapper .form {
   }
 
     /* Reviews */
+
+    .reviews h2 {
+      padding-bottom: 50px;
+    }
+
 .reviews article div {
   width: 42%;
   }
@@ -822,12 +832,17 @@ aside .content-wrapper .form {
   .reviews figure{
     width: 44%;
   }
+
+  footer h4 {
+    font-size: 1.875em;
+  }
+
 /* ==========================================================================
    About Page
    ========================================================================== */
     .mission h2,
     .contact-section .content-wrapper h2 {
-        width: 100%;
+        width: 95%;
         font-size: 3em;
     }
 
