@@ -267,6 +267,7 @@ footer .contact {
 
 footer .copyright{
   margin: 20px 0;
+  font-family: 'Poppins', sans-serif;
 }
 
 
@@ -341,6 +342,14 @@ input[type=button] {
   flex-flow: row wrap;
 }
 
+.features .content-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin-top: 100px;
+}
+
 .features h2{
   margin-bottom: 60px;
 }
@@ -360,11 +369,19 @@ input[type=button] {
 .features i {
   font-size: 3.75em;
   margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .features p{
   text-align: center;
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 
@@ -713,6 +730,23 @@ footer .social-icons {
   justify-content: space-between;
 }
 
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+
 /************** About Page *****************/
 
 .mission-content {
@@ -836,6 +870,23 @@ aside .content-wrapper .form {
   footer h4 {
     font-size: 1.875em;
   }
+
+  footer .social-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  footer .social-icons p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #527158;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+
 
 /* ==========================================================================
    About Page
